@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Please fill in the following details</h2>
+
+    <form action="index.php" method="post" name="formUser">
+
+        <label for="email"> Email address: </label><br />
+        <input type="email" id="email" name="email" required />
+        <br /><br />
+
+        <label for="username">Username (6-10 characters; alphanumeric only): </label><br/>
+        <input type="text" id="username" name="username" required />
+        <br /><br />
+
+        <label for="password">Password (at least one lowercase letter, one uppercase letter, and onenumber): </label><br/>
+        <input type="text" id="password" name="password" required />
+        <br /><br />
+
+        <label for="birthdate">Date of Birth: </label><br />
+        <input type="date" id="birthdate" name="birthdate" required />
+        <br /><br />
+
+
+        <label for="gender">Gender: </label><br />
+        <input type="radio" id="male" name="gender" value="male" required />
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other" />
+        <label for="other">Other</label>
+        <br /><br />
+
+        <label for="address">Enter Your Address: </label><br />
+        <input
+        type="text"
+        id="addressStreet"
+        name="address_street"
+        placeholder="Street address"
+        required/>
+        <br />
+
+        <input
+        type="text"
+        id="addressCity"
+        name="address_city"
+        placeholder="City"
+        required/>
+        <br />
+        <br />
+
+      <button type="submit">Submit</button>
+      
+    </form>
+    
+</body>
+</html>
